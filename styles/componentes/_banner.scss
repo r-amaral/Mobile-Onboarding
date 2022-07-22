@@ -1,0 +1,19 @@
+@import '../abstract/_variables.scss';
+
+.banner {
+    color: $tertiary-color;
+    text-align: center;
+    margin-top: 7px;
+
+    .banner__title {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 26px;
+    }
+
+    .banner__text {
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 64px;
+    }
+}

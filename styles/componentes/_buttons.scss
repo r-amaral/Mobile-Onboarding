@@ -1,0 +1,31 @@
+@import '../abstract/_variables.scss';
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 42px;
+    width: 100%;
+
+    .buttons__content {
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .buttons__content--continue {
+        background-color: $secondary-color;
+        box-shadow: $main-shadow;
+        color: $primary-color;
+        width: 100%;
+        height: 54px;
+    }
+
+    .buttons__content--skip {
+        background-color: transparent;
+        color: $secondary-color;
+        width: 45px;
+    }
+}

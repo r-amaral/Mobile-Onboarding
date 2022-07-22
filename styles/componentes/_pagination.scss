@@ -1,0 +1,26 @@
+@import '../abstract/_variables.scss';
+
+.pagination {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 63px;
+    list-style: none;
+    cursor: pointer;
+
+    .pagination__item {
+        width: 12px;
+        height: 12px;
+        border: 1px solid $tertiary-color;
+        border-radius: 100%;
+        overflow: hidden;
+
+        .pagination__link {
+            padding: 0px 6px;
+        }
+    }
+
+    .pagination__item--active {
+        border: 1px solid $secondary-color;
+        background-color: $secondary-color;
+    }
+}
