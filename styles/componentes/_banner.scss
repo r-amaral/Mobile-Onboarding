@@ -3,17 +3,17 @@
 .banner {
     color: $tertiary-color;
     text-align: center;
-    margin-top: 7px;
+    margin-top: .45rem;
 
     .banner__title {
         font-weight: 600;
-        font-size: 24px;
-        margin-bottom: 26px;
+        font-size: 1.5rem;
+        margin-bottom: 1.6rem;
     }
 
     .banner__text {
         font-weight: 400;
-        font-size: 18px;
-        margin-bottom: 64px;
+        font-size: 1.12rem;
+        margin-bottom: 4rem;
     }
 }

@@ -2,14 +2,29 @@
 @import '../abstract/_variables.scss';
 
 body {
-
     font-family: $main-font;
-
+    
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding: 32px 40px;
+        padding: 32px 0;
+        margin: 0 5.3%;
+        
+        img {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and (min-width:425px) {
+    body {
+        .container {
+            padding-right: calc((100% - 425px)/2);
+            padding-left: calc((100% - 425px)/2);
+            margin: 0 35px;
+        }
+
     }
 }

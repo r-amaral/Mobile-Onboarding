@@ -1,33 +1,24 @@
-const communityButton = document.querySelectorAll('.community');
-const deliveryButton = document.querySelectorAll('.delivery');
-const toolsButton = document.querySelector('.tools');
+const communityButton = document.getElementById('community')
+const deliveryButton = document.getElementById('delivery');
+const toolsButton = document.getElementById('tools');
 
-communityButton.forEach(button => {
+const button = document.querySelectorAll('button')
+
+button.forEach(button => {
 
     button.addEventListener('click', () => {
 
-        if (button.textContent == 'Continue') {
+        if(button == communityButton)
             window.open('../views/safe-delivery.html', '_self')
-        } else {
+        
+        if(button == deliveryButton) 
             window.open('../views/buy-&-sell-tools.html', '_self')
-        }
+     
+        if(button.textContent == 'Skip')
+            window.open('../views/buy-&-sell-tools.html', '_self')
 
+        if(button == toolsButton)
+            window.open('../index.html', '_self')
+              
     })
 })
-
-deliveryButton.forEach(button => {
-
-    button.addEventListener('click', () => {
-
-        window.open('../views/buy-&-sell-tools.html', '_self')
-
-    })
-
-})
-
-toolsButton.addEventListener('click', () => {
-    window.open('../index.html', '_self')
-})
-
-
-
