@@ -62,14 +62,14 @@ body .container {
   cursor: pointer;
   padding: 0;
 }
-.buttons .buttons__content--continue {
+.buttons .buttons__content--main {
   background-color: #92E3A9;
   box-shadow: 0px 4px 10px #A1C3FC;
   color: #ffffff;
   width: 100%;
   height: 54px;
 }
-.buttons .buttons__content--skip {
+.buttons .buttons__content--secondary {
   background-color: transparent;
   color: #92E3A9;
   width: 45px;

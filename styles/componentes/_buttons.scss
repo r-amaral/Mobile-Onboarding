@@ -15,7 +15,7 @@
         padding: 0;
     }
 
-    .buttons__content--continue {
+    .buttons__content--main {
         background-color: $secondary-color;
         box-shadow: $main-shadow;
         color: $primary-color;
@@ -23,7 +23,7 @@
         height: 54px;
     }
 
-    .buttons__content--skip {
+    .buttons__content--secondary {
         background-color: transparent;
         color: $secondary-color;
         width: 45px;
