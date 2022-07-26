@@ -1,44 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
 }
-body .container {
+body main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 800px;
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  position: absolute;
+  transition: 1s;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 32px 0;
-  margin: 0 5.3%;
+  padding: 2rem 5.3%;
+  width: 100%;
 }
-body .container img {
+.container img {
   width: 100%;
   max-width: 300px;
 }
 
+.community {
+  left: 0;
+}
+
+.delivery {
+  left: 200vw;
+}
+
+.tools {
+  left: 400vw;
+}
+
 @media screen and (min-width: 425px) {
-  body .container {
-    padding-right: calc((100% - 425px) / 2);
-    padding-left: calc((100% - 425px) / 2);
-    margin: 0 35px;
+  .container {
+    max-width: 425px;
+    padding: 2rem 22.5px;
+    margin-left: calc((100% - 425px) / 2);
+    margin-right: calc((100% - 425px) / 2);
   }
 }
 .pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pagination .pagination__list {
   display: flex;
   gap: 1.1rem;
   margin-bottom: 4rem;
   list-style: none;
   cursor: pointer;
 }
-.pagination .pagination__item {
+.pagination .pagination__list .pagination__item {
   width: 12px;
   height: 12px;
   border: 1px solid #000000;
   border-radius: 100%;
   overflow: hidden;
 }
-.pagination .pagination__item .pagination__link {
+.pagination .pagination__list .pagination__item .pagination__link {
   padding: 0px 6px;
 }
-.pagination .pagination__item--active {
+.pagination .pagination__list .pagination__item--active {
   border: 1px solid #92E3A9;
   background-color: #92E3A9;
 }
@@ -71,8 +105,11 @@ body .container img {
   font-size: 1.12rem;
   font-weight: 500;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   cursor: pointer;
-  padding: 0;
 }
 .buttons .buttons__content--main {
   background-color: #92E3A9;

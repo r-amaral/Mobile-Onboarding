@@ -1,0 +1,41 @@
+@import '../abstract/_variables.scss';
+
+.container {
+    box-sizing: border-box;
+    position: absolute;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5.3%;
+    width: 100%;
+
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.community {
+    left: 0;
+}
+
+.delivery {
+    left: 200vw;
+}
+
+.tools {
+    left: 400vw;
+}
+
+
+@media screen and (min-width:425px) {
+
+    .container {
+        max-width: 425px;
+        padding: 2rem 22.5px;
+        margin-left: calc((100% - 425px)/2);
+        margin-right: calc((100% - 425px)/2);
+    }
+}

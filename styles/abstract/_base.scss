@@ -1,0 +1,17 @@
+@import './_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: $main-font;
+    display: flex;
+    justify-content: center;
+
+    main {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+        height: 800px;
+        overflow: hidden;
+    }
+}

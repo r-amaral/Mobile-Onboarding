@@ -7,31 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Community</title>
+    <title>Onboarding</title>
 </head>
 
 <body>
     <main>
-        <section class='container'>
+        <section class='container community'>
             <img src="./image/Online world-pana.png" alt="Ilustração da comunidade">
             <div class='banner'>
-                <h2 class='banner__title'>Plant lover Community</h2>
+                <h1 class='banner__title'>Plant lover Community</h1>
                 <p class="banner__text">Find gardening enthusiasts from all over the world</p>
             </div>
-            <ul class='pagination'>
-                <li class='pagination__item pagination__item--active'>
-                    <a class='pagination__link' href="./index.html"></a>
-                </li>
-                <li class='pagination__item'>
-                    <a class='pagination__link' href="./views/safe-delivery.html"></a>
-                </li>
-                <li class='pagination__item'>
-                    <a class='pagination__link' href="./views/buy-&-sell-tools.html"></a>
-                </li>
-            </ul>
-            <div class='buttons'>
-                <button id='community' class="buttons__content  buttons__content--main">Continue</button>
-                <button class='buttons__content buttons__content--secondary'>Skip</button>
+            <div class='pagination pagination--community'>
+                <ul class='pagination__list'>
+                    <li class='pagination__item pagination__item--active'></li>
+                    <li class='pagination__item'></li>
+                    <li class='pagination__item'></li>
+                </ul>
+                <div class='buttons'>
+                    <button class="buttons__content  buttons__content--main">Continue</button>
+                    <button class='buttons__content buttons__content--secondary'>Skip</button>
+                </div>
+            </div>
+        </section>
+        <section class='container delivery'>
+            <img src="../image/In no time-pana.png" alt="Ilustração de uma entrega">
+            <div class='banner'>
+                <h2 class='banner__title'>Get fast & safe delivery</h2>
+                <p class="banner__text">Get good quality products for your plants </p>
+            </div>
+            <div class='pagination pagination--delivery'>
+                <ul class='pagination__list'>
+                    <li class='pagination__item'></li>
+                    <li class='pagination__item pagination__item--active'></li>
+                    <li class='pagination__item'></li>
+                </ul>
+                <div class='buttons'>
+                    <button class="buttons__content  buttons__content--main">Continue</button>
+                    <button class="buttons__content buttons__content--secondary">Skip</button>
+                </div>
+            </div>
+        </section>
+        <section class='container tools'>
+            <img src="../image/Ecommerce campaign-cuate.png" alt="Ilustração de uma pessoa vendendo">
+            <div class='banner'>
+                <h2 class='banner__title'>Buy & Sell Tools</h2>
+                <p class="banner__text">Buy & sell good quality products for your beautiful plants</p>
+            </div>
+            <div class='pagination pagination--tools'>
+                <ul class="pagination__list">
+                    <li class='pagination__item'></li>
+                    <li class='pagination__item'></li>
+                    <li class='pagination__item pagination__item--active'></li>
+                </ul>
+                <div class='buttons'>
+                    <button class="buttons__content  buttons__content--main">Get started</button>
+                </div>
             </div>
         </section>
     </main>
